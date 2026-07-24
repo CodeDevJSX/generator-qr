@@ -52,7 +52,21 @@
     padding:22px;
     margin-bottom:20px;
   }
-
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+  @media (min-width: 768px) {
+    .row {
+      display:grid;
+    grid-template-columns:28px 1fr 1fr;
+    gap:12px;
+    align-items:start;
+    padding:14px 0;
+    border-bottom:1px solid var(--line)
+    }
+  }
   .row:last-child{border-bottom:none;}
   .row .num{
     font-family:var(--mono);
